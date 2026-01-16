@@ -1,0 +1,210 @@
+/* =======================
+   GLOBAL STYLES
+======================= */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #f4f7fb;
+    color: #333;
+}
+
+/* =======================
+   NAVBAR
+======================= */
+.navbar {
+    background: linear-gradient(90deg, #1e3c72, #2a5298);
+    color: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+}
+
+/* =======================
+   BUTTON
+======================= */
+.btn {
+    background: #ff9800;
+    color: white;
+    padding: 10px 22px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 600;
+}
+
+/* =======================
+   HERO SECTION
+======================= */
+.hero {
+    background-image: url("https://images.unsplash.com/photo-1519389950473-47ba0277781c");
+    background-size: cover;
+    background-position: center;
+    padding: 90px 20px;
+    color: white;
+    text-align: center;
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    border-radius: 12px;
+    max-width: 850px;
+    margin: auto;
+}
+
+.hero h2 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.subtext {
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+/* =======================
+   DETAILS SECTION
+======================= */
+.details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 50px;
+    justify-content: center;
+}
+
+.card {
+    background: white;
+    width: 280px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.card h3 {
+    color: #1e3c72;
+    margin-bottom: 10px;
+}
+
+/* =======================
+   LOGIN PAGE (SIMPLE & CLEAN)
+======================= */
+.login-body {
+    background: #eef2f7;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-wrapper {
+    display: flex;
+    width: 780px;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+/* LEFT IMAGE – STUDENT INNOVATION */
+.login-image {
+    width: 50%;
+    background-image: url("image.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+    color:whitesmoke;
+    font-family: 'Playfair Display', serif;
+}
+
+.login-image h2 {
+    font-size: 30px;
+}
+
+.login-image p {
+    font-size: 15px;
+    margin-top: 8px;
+}
+
+/* LOGIN FORM */
+.login-container {
+    width: 50%;
+    padding: 45px;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+
+.login-container h2 {
+    margin-bottom: 25px;
+    color: #1e3c72;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.login-container input:focus {
+    outline: none;
+    border-color: #1e3c72;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 18px;
+    background: #1e3c72;
+    border: none;
+    color: white;
+    font-size: 15px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+#message {
+    margin-top: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* =======================
+   FOOTER
+======================= */
+footer {
+    background: #1e3c72;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* =======================
+   RESPONSIVE DESIGN
+======================= */
+@media (max-width: 768px) {
+    .login-wrapper {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .login-image,
+    .login-container {
+        width: 100%;
+    }
+
+    .details {
+        padding: 30px;
+    }
+
+    .hero h2 {
+        font-size: 32px;
+    }
+}
